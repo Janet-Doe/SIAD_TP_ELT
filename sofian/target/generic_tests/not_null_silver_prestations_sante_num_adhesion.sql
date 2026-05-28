@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="num_adhesion", model=get_where_subquery(ref('silver_prestations_sante'))) }}

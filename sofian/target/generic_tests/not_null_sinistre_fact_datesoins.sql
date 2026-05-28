@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="datesoins", model=get_where_subquery(ref('sinistre_fact'))) }}

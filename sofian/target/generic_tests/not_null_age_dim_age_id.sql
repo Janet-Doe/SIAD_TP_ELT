@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="age_id", model=get_where_subquery(ref('age_dim'))) }}

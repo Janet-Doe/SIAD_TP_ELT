@@ -1,1 +1,0 @@
-{{ test_accepted_values(column_name="beneficiary_type_label", model=get_where_subquery(ref('silver_adhesion_detail')), values=["Assuré","Enfant","Conjoint","Autre"]) }}

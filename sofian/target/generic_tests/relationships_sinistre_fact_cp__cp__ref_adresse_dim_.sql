@@ -1,1 +1,0 @@
-{{ test_relationships(column_name="cp", field="cp", model=get_where_subquery(ref('sinistre_fact')), to=ref('adresse_dim')) }}

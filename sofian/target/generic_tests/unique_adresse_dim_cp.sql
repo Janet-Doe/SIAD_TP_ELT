@@ -1,1 +1,0 @@
-{{ test_unique(column_name="cp", model=get_where_subquery(ref('adresse_dim'))) }}

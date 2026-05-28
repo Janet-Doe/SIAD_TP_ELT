@@ -1,1 +1,0 @@
-{{ test_accepted_values(column_name="code_garantie", model=get_where_subquery(ref('silver_adhesion_detail')), values=["NA","NB","NC","ND","NE","NF","N1","N2","N3","N4","N5","N6"]) }}

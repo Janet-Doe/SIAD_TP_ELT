@@ -1,1 +1,0 @@
-{{ test_relationships(column_name="benid", field="b_id", model=get_where_subquery(ref('sinistre_fact')), to=ref('beneficiaire_dim')) }}

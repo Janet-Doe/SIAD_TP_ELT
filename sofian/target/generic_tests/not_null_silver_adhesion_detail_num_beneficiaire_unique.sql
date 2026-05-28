@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="num_beneficiaire_unique", model=get_where_subquery(ref('silver_adhesion_detail'))) }}

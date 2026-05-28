@@ -1,1 +1,0 @@
-{{ test_unique(column_name="c_id", model=get_where_subquery(ref('contrat_dim'))) }}

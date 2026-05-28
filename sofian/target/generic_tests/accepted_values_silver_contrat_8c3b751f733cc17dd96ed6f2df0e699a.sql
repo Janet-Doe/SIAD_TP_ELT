@@ -1,1 +1,0 @@
-{{ test_accepted_values(column_name="categ_formule", model=get_where_subquery(ref('silver_contrat')), values=["Confort","Privilege","TM+"]) }}

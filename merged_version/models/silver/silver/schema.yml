@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: silver_adhesion_detail
+    columns:
+      - name: num_adhesion_normalise
+        tests:
+          - not_null
+      - name: num_beneficiaire_unique
+        tests:
+          - not_null
+      - name: exercice_paiement
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [2010, 2011, 2012]
+      - name: type_beneficiaire
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["AS", "CO", "EN"]
+      - name: date_naissance_beneficiaire
+        tests:
+          - not_null
+
+  - name: silver_beneficiaire
+    columns:
+      - name: num_beneficiaire
+        tests:
+          - not_null
+      - name: sexe
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ["Homme", "Femme"]
+      - name: regime_social
+        tests:
+          - not_null
+
+  - name: silver_prestations_sante
+    columns:
+      - name: num_sinistre
+        tests:
+          - not_null
+      - name: num_adhesion
+        tests:
+          - not_null
+      - name: frais_reel_assure
+        tests:
+          - not_null
+      - name: montant_secu
+        tests:
+          - not_null
+      - name: montant_rembourse
+        tests:
+          - not_null
+
+  - name: silver_dept_region
+    columns:
+      - name: departmentcode
+        tests:
+          - not_null
+      - name: departmentname
+        tests:
+          - not_null
+
+  - name: silver_meteo
+    columns:
+      - name: departement
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+      - name: tempmin
+        tests:
+          - not_null
+      - name: tempmax
+        tests:
+          - not_null
+
+  - name: silver_contrat
+    columns:
+      - name: num_adhesion_normalise
+        tests:
+          - not_null
+      - name: code_profession
+        tests:
+          - not_null

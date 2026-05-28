@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="exercice_paiement", model=get_where_subquery(ref('silver_adhesion_detail')), values=[2010,2011,2012]) }}

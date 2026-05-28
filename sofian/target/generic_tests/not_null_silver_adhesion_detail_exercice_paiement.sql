@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="exercice_paiement", model=get_where_subquery(ref('silver_adhesion_detail'))) }}

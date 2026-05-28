@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="sexe", model=get_where_subquery(ref('beneficiaire_dim')), values=["Homme","Femme"]) }}

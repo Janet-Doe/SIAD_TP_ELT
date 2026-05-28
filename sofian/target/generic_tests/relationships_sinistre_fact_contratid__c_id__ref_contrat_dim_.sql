@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="contratid", field="c_id", model=get_where_subquery(ref('sinistre_fact')), to=ref('contrat_dim')) }}

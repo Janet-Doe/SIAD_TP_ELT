@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="num_sinistre", model=get_where_subquery(ref('silver_prestations_sante'))) }}

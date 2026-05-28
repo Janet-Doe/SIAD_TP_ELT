@@ -1,0 +1,22 @@
+
+    
+    
+
+with all_values as (
+
+    select
+        type_beneficiaire as value_field,
+        count(*) as n_records
+
+    from "projet_siad_elt"."silver"."silver_adhesion_detail"
+    group by type_beneficiaire
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'AS','CO','EN'
+)
+
+

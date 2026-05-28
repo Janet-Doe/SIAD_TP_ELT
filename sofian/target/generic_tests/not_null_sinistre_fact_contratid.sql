@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="contratid", model=get_where_subquery(ref('sinistre_fact'))) }}

@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="departement", model=get_where_subquery(ref('silver_dept_region'))) }}

@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="frais_reel", model=get_where_subquery(ref('silver_prestations_sante'))) }}

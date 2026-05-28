@@ -1,0 +1,1 @@
+{{ test_unique(column_name="adhesion_unique_id", model=get_where_subquery(ref('silver_adhesion_detail'))) }}

@@ -1,0 +1,56 @@
+{
+    "path_count": 135,
+    "parsed_path_count": 135,
+    "static_analysis_path_count": 4,
+    "static_analysis_parsed_path_count": 3,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.09715879999999988,
+    "load_macros_elapsed": 0.8204187999999997,
+    "parse_project_elapsed": 0.7822798,
+    "patch_sources_elapsed": 0.006670699999999918,
+    "process_manifest_elapsed": 0.026022399999999557,
+    "load_all_elapsed": 2.0143244999999994,
+    "projects": [
+        {
+            "project_name": "projet_elt_beneficiaire",
+            "elapsed": 0.7713874999999999,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.26591039999999966,
+                    "parsed_path_count": 4
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.15348050000000013,
+                    "parsed_path_count": 1
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.3477082,
+                    "parsed_path_count": 3
+                }
+            ],
+            "parsed_path_count": 8
+        },
+        {
+            "project_name": "dbt_postgres",
+            "elapsed": 0.006187299999999674,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0.004609699999999606,
+            "parsers": [
+                {
+                    "parser": "doc",
+                    "elapsed": 0.0002608999999997863,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        }
+    ]
+}

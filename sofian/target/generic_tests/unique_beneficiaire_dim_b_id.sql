@@ -1,0 +1,1 @@
+{{ test_unique(column_name="b_id", model=get_where_subquery(ref('beneficiaire_dim'))) }}

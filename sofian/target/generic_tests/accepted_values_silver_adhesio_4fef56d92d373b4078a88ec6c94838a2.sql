@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="code_fractionnement_libelle", model=get_where_subquery(ref('silver_adhesion_detail')), values=["Annuel","Semestriel","Trimestriel","Mensuel","Unique"]) }}

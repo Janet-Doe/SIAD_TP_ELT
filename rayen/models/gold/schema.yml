@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: dim_beneficiaire
+    description: "Dimension Gold des beneficiaires pour le schema en etoile."
+    columns:
+      - name: BENEFICIAIRE_ID
+        quote: true
+        description: "Cle primaire de la dimension beneficiaire. Correspond a Benid dans la table de faits."
+        tests:
+          - not_null
+          - unique
+      - name: SEXE
+        quote: true
+        description: "Sexe normalise du beneficiaire."
+      - name: REGIME_SOCIAL
+        quote: true
+        description: "Regime social normalise du beneficiaire."
+
+  - name: fait_sinistre
+    description: "Table de faits Gold des sinistres/prestations. En POC, seules les donnees liees a la dimension beneficiaire sont pretes."
+    columns:
+      - name: Benid
+        quote: true
+        description: "Cle de jointure vers dim_beneficiaire.BENEFICIAIRE_ID."
+      - name: Age
+        quote: true
+        description: "Cle de jointure vers AgeDim, temporairement NULL."
+      - name: DateSoins
+        quote: true
+        description: "Cle/date de soins vers TempsDim, temporairement NULL."
+      - name: DateRemb
+        quote: true
+        description: "Cle/date de remboursement vers TempsDim, temporairement NULL."
+      - name: acteid
+        quote: true
+        description: "Cle de jointure vers ActeDim, temporairement NULL."
+      - name: contratid
+        quote: true
+        description: "Cle de jointure vers ContratDim, temporairement NULL."
+      - name: adresseid
+        quote: true
+        description: "Cle de jointure vers AdresseDim, temporairement NULL."
+      - name: Temperature
+        quote: true
+        description: "Attribut contextuel de temperature."
+      - name: Anciennete
+        quote: true
+        description: "Attribut contextuel d'anciennete."
+      - name: Frais Reel
+        quote: true
+        description: "Montant des frais reels."
+      - name: MontantSecu
+        quote: true
+        description: "Montant rembourse par la securite sociale."
+      - name: MontantMut
+        quote: true
+        description: "Montant rembourse par la mutuelle."

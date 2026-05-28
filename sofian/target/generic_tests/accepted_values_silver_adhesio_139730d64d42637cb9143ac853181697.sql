@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="type_beneficiaire", model=get_where_subquery(ref('silver_adhesion_detail')), values=["AS","CO","EN"]) }}

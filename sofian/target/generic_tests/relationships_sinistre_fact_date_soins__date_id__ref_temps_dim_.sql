@@ -1,0 +1,1 @@
+{{ test_relationships(column_name="date_soins", field="date_id", model=get_where_subquery(ref('sinistre_fact')), to=ref('temps_dim')) }}

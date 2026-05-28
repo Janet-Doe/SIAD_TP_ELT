@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="date_meteo", model=get_where_subquery(ref('silver_meteo'))) }}

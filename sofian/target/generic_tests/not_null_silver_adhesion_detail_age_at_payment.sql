@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="age_at_payment", model=get_where_subquery(ref('silver_adhesion_detail'))) }}
